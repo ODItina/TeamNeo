@@ -19,40 +19,53 @@
 
 
     <div class="row no-gutters">
-        <div class="col-xl-4 col-lg-4 col-sm-12 col-12 h-100" style="height: 100% !important; object-fit: fill;">
+        <div class="col-xl-4 col-lg-4 col-sm-12 col-12">
 
             <!-- Card -->
-            <div class="card center d-flex align-items-stretch align-items-sm-stretch flex-wrap " style="height: 100% !important; object-fit: fill;">
+            <div class="card  h-100 min-vh-100" >
+
+                <div class="card-body">
+
+
+                    <img src="./content/images/team-neo-logo.png" width="180" class=" mx-auto d-block center" alt="Logo">
+
+
+                </div>
+
+                <div class="card-body p-2 m-2 bg-amber d-block d-sm-block d-md-block d-lg-none d-xl-none">
+
+                    <img src="./content/images/landing-photo-1.svg" width="25%" class="rounded center d-flex align-items-center" alt="Responsive image">
+
+
+                </div>
+
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
 
 
                         <div class="card-body">
-
-                            <img src="./content/images/team-neo-logo.png" width="180" class=" mx-auto d-block" alt="">
-
                             <!-- Title -->
                             <!--<h2 class="card-title text-center blue-text mt-3"><a>Account Login</a></h2>-->
 
-                            <div class="form-group clearfix page-link mt-5">
-                                <span class="pull-left text-muted">Login Using</span>
+                            <div class="form-group clearfix border border-light mt-1 p-1">
+                                <span class="pull-left text-muted lead">Login Using</span>
                                 <span class="pull-right">
-                            <a href="#" class="mr-2">
-                                <img src="./content/images/google.svg" height="20" alt="Google">
-                            </a>
-                            <a href="#">
-                                <img src="./content/images/facebook.svg" height="20"  alt="Facebook">
-                            </a>
-                        </span>
+                                    <a href="#" class="mr-2">
+                                        <img src="./content/images/google.svg" height="35" alt="Google">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./content/images/facebook.svg" height="35"  alt="Facebook">
+                                    </a>
+                                </span>
                             </div>
 
 
                             <!-- Title -->
-                            <h5 class="card-title text-center text-muted mt-5"><a>Account Login</a></h5>
+                            <h5 class="text-center text-muted mt-2">Account Login</h5>
 
                             <form action="">
 
-                                <div class="md-form input-group mt-3 mb-5">
+                                <div class="md-form input-group  input-group-lg mt-1 mb-1">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text md-addon">
                                             <i class="fa fa-envelope fa-lg blue-text"></i>
@@ -61,7 +74,7 @@
                                     <input name="Username" type="text" placeholder="Email" class="form-control" aria-label="Text input with checkbox">
                                 </div>
 
-                                <div class="md-form input-group mb-5">
+                                <div class="md-form input-group  input-group-lg mb-5">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text md-addon">
                                             <i class="fa fa-key fa-lg blue-text"></i>
@@ -97,58 +110,56 @@
                     <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
 
                         <div class="card-body">
-
-                            <img src="./content/images/team-neo-logo.png" width="180" class=" mx-auto d-block" alt="">
-
                             <!-- Title -->
                             <!--<h2 class="card-title text-center blue-text mt-3"><a>Account Login</a></h2>-->
 
 
                             <!-- Title -->
-                            <h5 class="card-title text-center text-muted mt-2"><a>Register</a></h5>
+                            <h5 class="text-center text-muted">Register</h5>
 
-                            <form action="">
+                            <form action="saveAuthentication.php" method="POST" id="registrationForm">
 
-                                <div class="md-form input-group mt-3 mb-5">
+                                <div class="md-form input-group input-group-lg mb-2">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text md-addon">
                                             <i class="fa fa-hashtag fa-lg blue-text"></i>
                                         </div>
                                     </div>
-                                    <input name="FullName" type="text" placeholder="Full Name" class="form-control" aria-label="Text input with checkbox">
+                                    <input name="FullName" id="=FullName" type="text" placeholder="Full Name" class="form-control" aria-label="Text input with checkbox">
                                 </div>
 
-                                <div class="md-form input-group mt-3 mb-5">
+                                <div class="md-form input-group input-group-lg mt-1 mb-2">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text md-addon">
                                             <i class="fa fa-envelope fa-lg blue-text"></i>
                                         </div>
                                     </div>
-                                    <input name="NewUsername" type="text" placeholder="Email" class="form-control" aria-label="Text input with checkbox">
+                                    <input name="NewUsername" id="NewUsername" type="email" placeholder="Email" class="form-control" aria-label="Text input with checkbox">
                                 </div>
 
-                                <div class="md-form input-group mb-5">
+                                <div class="md-form input-group input-group-lg mt-1 mb-2">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text md-addon">
                                             <i class="fa fa-key fa-lg blue-text"></i>
                                         </div>
                                     </div>
-                                    <input name="NewPassword" type="password" placeholder="Password" class="form-control" aria-label="Text input with checkbox">
+                                    <input name="NewPassword" id="NewPassword" type="password" placeholder="Password" class="form-control" aria-label="Text input with checkbox">
                                 </div>
 
-                                <div class="md-form input-group mb-5">
+                                <div class="md-form input-group input-group-lg mt-1 mb-4">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text md-addon">
                                             <i class="fa fa-key fa-lg blue-text"></i>
                                         </div>
                                     </div>
-                                    <input name="Confirm Password" type="password" placeholder="Confirm Password" class="form-control" aria-label="Text input with checkbox">
+                                    <input name="ConfirmPassword" id="ConfirmPassword" type="password" placeholder="Confirm Password" class="form-control" aria-label="Text input with checkbox">
                                 </div>
 
 
-                                <div class="form-group clearfix">
+                                <div class="form-group clearfix mt-2 text-center">
 
-                                    <a href="#" class="btn btn-primary btn-lg btn-block mt-2">Login In</a>
+                                    <button type="submit" class="btn btn-primary btn-lg">Register</button>
+                                    <button type="reset" class="btn btn-light btn-lg">Cancel</button>
 
                                 </div>
                                 <div class="form-group text-center">
@@ -189,6 +200,48 @@
 <script>
     $( ".click-tab" ).on( "click", function() {
         $( ".click-tab" ).removeClass( "active ");
+    });
+</script>
+<script>
+    $(document).ready(function() {
+
+        // process the form
+        $('#registrationForm').submit(function(event) {
+
+            // get the form data
+            // there are many ways to get this data using jQuery (you can use the class or id also)
+            var formData = {
+                'FullName'              : $('input[name=FullName]').val(),
+                'NewUserName'             : $('input[name=NewUsername]').val(),
+                'Password'    : $('input[name=NewPassword]').val()
+            };
+
+            formData = JSON.stringify(formData);
+
+            console.info(formData);
+
+            // process the form
+            $.ajax({
+                type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+                url         : 'saveAuthentication.php', // the url where we want to POST
+                contentType: "application/json",
+                data        : formData, // our data object
+                dataType    : 'json', // what type of data do we expect back from the server
+                encode: true
+            })
+            // using the done promise callback
+                .done(function(data) {
+
+                    // log data to the console so we can see
+                    console.log(data);
+
+                    // here we will handle errors and validation messages
+                });
+
+            // stop the form from submitting the normal way and refreshing the page
+            event.preventDefault();
+        });
+
     });
 </script>
 </body>
